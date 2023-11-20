@@ -1,0 +1,537 @@
+
+body{
+  background-color: whitesmoke;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.home{
+  width: 100%;
+  height: 95vh;
+  background-image: url("../Images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: white;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  padding: 0px 5%;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li a{
+  margin: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #505050;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.logo{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 22px;
+}
+
+.active{
+  font-weight: bold;
+  color: #2d2a2a;
+}
+
+.my_picture{
+	height:530px;
+	position:absolute;
+	bottom:40px;
+	left:65%;
+	transform: translateX(-75%);
+}
+
+.text-container p:nth-child(1){
+	font-family: calibri;
+	font-weight: bold;
+	color: rgb(117, 113, 113);
+	font-size: 22px;
+}
+
+.text-container p:nth-child(2){
+	font-family:calibri;
+	font-weight:bold;
+	letter-spacing:1px;
+	color:rgb(32, 32, 32);
+	font-size:60px;
+	
+}
+.text-container p:nth-child(3){
+	font-family: 'Times New Roman', Times, serif;
+	color: rgb(64, 61, 61);
+	font-size:30px;
+	line-height:30px;
+}
+
+/* Responsive styles for tablets and small desktops */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  nav ul li a {
+    margin: 20px;
+    font-size: 14px;
+  }
+
+  .text-container {
+    left: 10%;
+  }
+}
+
+/* Responsive styles for smaller screens like phones */
+@media only screen and (max-width: 767px) {
+  nav {
+    padding: 0 3%;
+  }
+
+  nav ul li a {
+    margin: 15px;
+    font-size: 13px;
+  }
+
+  .text-container {
+    left: 5%;
+  }
+}
+
+.text-container p{
+	margin:45px 0px 25px;
+	line-height:0px;
+}
+
+.text-container{
+  position: absolute;
+  left: 13%;
+  top: 42%;
+  transform:translate(-13%,-42%);
+}
+
+.about-container{
+	width: 80%;
+  height: 330px;
+  background-color: white;
+  position: relative;
+  margin: -7%  auto 20px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+/* Responsive styles for tablets and small desktops */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-container {
+    width: 90%;
+  }
+}
+
+/* Responsive styles for smaller screens like phones */
+@media only screen and (max-width: 767px) {
+  .about-container {
+    width: 95%;
+  }
+}
+
+.about-container img{
+	height:250px;
+  border: 5px solid #555;
+  box-shadow: 10px 10px 10px black;
+  
+}
+
+.about-text{
+	width:500px;
+}
+
+  .about-text p:nth-child(1){
+    color: rgb(45, 42, 42);
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 0px;
+  }
+
+  .about-text p:nth-child(2){
+    color: rgb(62, 61, 61);
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 5px;
+    font-weight: bold;
+  }
+
+  .about-text p:nth-child(3),.about-text p:nth-child(4){
+    color: rgb(125, 125, 125);
+    font-family: calibri;
+    font-size: 15px;
+  }
+
+  .skills-education{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+.skills,.education{
+  background-color: white;
+  height: 500px;
+  padding: 2% 10% 0px 10%;
+  display: inline-block;
+  width: 300px;
+  margin-right: 15px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+/* Responsive styles for tablets and small desktops */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .skills,
+  .education {
+    width: 45%;
+  }
+}
+
+/* Responsive styles for smaller screens like phones */
+@media only screen and (max-width: 767px) {
+  .skills,
+  .education {
+    width: 90%;
+  }
+}
+
+
+.skills p:nth-child(1){
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(28, 28, 28);
+  line-height:0px;
+}
+
+.skills p:nth-child(2){
+  font-family: calibri;
+  color: rgb(125, 125, 125);
+  width: fit-content;
+  
+}
+
+.education p:nth-child(1){
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(29, 27, 27);
+  line-height:0px;
+  margin-bottom: 10px;
+}
+
+.education p:nth-child(2){
+  font-family: calibri;
+  color: rgb(29, 27, 27);
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+}
+
+.education p:nth-child(3),.education p:nth-child(4){
+  font-family: calibri;
+  color: rgb(125, 125, 125);
+  width: fit-content;
+}
+
+
+.projects{
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 50px;
+}
+
+/* Responsive styles for tablets and small desktops */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .projects p {
+    font-size: 24px;
+  }
+
+  .projects button {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+/* Responsive styles for smaller screens like phones */
+@media only screen and (max-width: 767px) {
+  .projects p {
+    font-size: 20px;
+  }
+
+  .projects button {
+    width: 130px;
+    height: 35px;
+    font-size: 16px;
+  }
+}
+
+.projects p{
+  color: white;
+  font-family: calibri;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.projects button{
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.7s;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.projects button:hover{
+  background-color: rgb(115, 115, 115);
+  color: white;
+}
+
+.contact-me{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  margin: 0;
+}
+
+.contact-me-container{
+  background-color: white;
+  width: 600px;
+  height: 1px solid #ccc;
+  border-radius: 30px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+/* Responsive styles for tablets and small desktops */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact-me-container {
+    width: 80%;
+  }
+}
+
+/* Responsive styles for smaller screens like phones */
+@media only screen and (max-width: 767px) {
+  .contact-me-container {
+    width: 90%;
+  }
+}
+
+.contact-me p{
+  font-family: calibri;
+}
+
+.contact-me p:nth-child(1){
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(29, 27, 27);
+  line-height: 10px;
+  text-align: center;
+}
+
+.contact-me p:nth-child(2),.contact-me p:nth-child(3){
+  font-size: 15px;
+  color: rgb(125, 125, 125);
+  text-align: center;
+}
+
+.sociale-media{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  margin: 0;
+}
+
+.instagram_logo,.x_logo{
+  width: 30px;
+  cursor: pointer;
+  margin: 5px;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.instagram_logo:hover{
+  opacity: 0.5;
+}
+
+.x_logo:hover{
+  opacity: 0.5;
+}
+
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#name{
+  border: 2px solid #ccc;
+  display: block;
+}
+
+#email{
+  border: 2px solid #ccc;
+  display: block;
+}
+
+#message{
+  border: 2px solid #ccc;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* CSS code for Projects Page */
+.home-projects{
+  width: 100%;
+  height: 95vh;
+  background-image: url("../Images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.previous-work-text-container p:nth-child(1){
+	font-family: calibri;
+	font-weight: bold;
+	color: rgb(117, 113, 113);
+	font-size: 22px;
+}
+
+.previous-work-text-container p:nth-child(2){
+	font-family:calibri;
+	font-weight:bold;
+	letter-spacing:1px;
+	color:rgb(32, 32, 32);
+	font-size:60px;
+	
+}
+.previous-work-text-container p:nth-child(3),.previous-work-text-container p:nth-child(4){
+	font-family: 'Times New Roman', Times, serif;
+	color: rgb(64, 61, 61);
+	font-size:30px;
+	line-height:30px;
+}
+
+.previous-work-text-container p{
+	margin:45px 0px 25px;
+	line-height:0px;
+}
+
+.previous-work-text-container{
+  width:90%;
+  margin: 30px;
+}
+
+/* Responsive styles for tablets and small desktops */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .previous-work-text-container {
+    width: 95%;
+  }
+}
+
+/* Responsive styles for smaller screens like phones */
+@media only screen and (max-width: 767px) {
+  .previous-work-text-container {
+    width: 100%;
+  }
+}
+
+.ctu-buddy-home-page,.ctu-buddy-timetable-page,.ctu-buddy-discussion-page,.ctu-buddy-share-page,.ctu-buddy-about-page,.ctu-buddy-contact-page{
+  margin: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Responsive styles for tablets and small desktops */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .ctu-buddy-home-page,
+  .ctu-buddy-timetable-page,
+  .ctu-buddy-discussion-page,
+  .ctu-buddy-share-page,
+  .ctu-buddy-about-page,
+  .ctu-buddy-contact-page {
+    width: 45%;
+  }
+}
+
+/* Responsive styles for smaller screens like phones */
+@media only screen and (max-width: 767px) {
+  .ctu-buddy-home-page,
+  .ctu-buddy-timetable-page,
+  .ctu-buddy-discussion-page,
+  .ctu-buddy-share-page,
+  .ctu-buddy-about-page,
+  .ctu-buddy-contact-page {
+    width: 90%;
+  }
+}
+
+.ctu-buddy-home-page p,.ctu-buddy-timetable-page p,.ctu-buddy-discussion-page p,.ctu-buddy-share-page p,.ctu-buddy-about-page p,.ctu-buddy-contact-page p{
+  font-family: calibri;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.ctu-buddy-home-page img,.ctu-buddy-timetable-page img,.ctu-buddy-discussion-page img,.ctu-buddy-share-page img,.ctu-buddy-about-page img,.ctu-buddy-contact-page img{
+  width: 300px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 15px rgba(0,0,0,0.2);
+}
+
+#link{
+  font-family: 'Times New Roman', Times, serif;
+	color: rgb(154, 80, 80);
+	font-size:30px;
+	line-height:30px;
+  text-decoration: underline;
+  transition: 0.7s;
+  font-style: italic;
+}
+
+#link:hover{
+  color: aqua;
+}
+
+.ctu-buddy{
+  background-color: rgb(229, 228, 228);
+  
+}
+
+

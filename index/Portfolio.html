@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio</title>
+      <link href="../CSS/Styles.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <section id="Home" class="home">
+      <nav>
+
+        <a href="#Home" class="logo">JS Design</a>
+
+        <ul>
+          <li><a href="#Home" class="active">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#ContactMe">Contact Me</a></li>
+        </ul>
+      </nav>
+
+      <div class="text-container">
+        <p></p>
+        <p>I'M JACOBUS</p>
+        <p></p>
+      </div>
+
+      <!--Picture Here-->
+      <img alt="Jacobus" class="my_picture" src="../Images/my_picture.png">
+
+    </section>
+
+    <div id="About" class="about-container">
+
+      <img src="../Images/my_about_picture.png"/>
+
+      <div class="about-text">
+        <p>About Me</p>
+        <p>Devolper & Designer</p>
+        <p>Hello there! I'm Jacobus Spreeth, a dedicated developer passionate about transforming ideas into reality through code. I specialize in crafting elegant solutions for web applications and navigating complex coding challenges. My diverse skill set spans various programming languages and frameworks.</p>
+        <p>Beyond coding, I am committed to continuous learning, staying updated on industry trends, and pushing the boundaries of what's possible. Join me on this journey as we explore my projects, delve into my skills, and discuss the potential for collaboration. Let's build something extraordinary together!</p>
+      </div>
+
+    </div>
+
+    <section id="Skills" class="skills-education">
+
+      <div class="skills">
+        
+        <p>Skills</p>
+        <p>In the world of tech, I've got some cool skills under my belt!<br> I'm pretty handy with Python, using it to do all sorts of things like making powerful programs, automating stuff, and digging into data. When it comes to building websites, I know my way around HTML, CSS, and JavaScript to make things look awesome and work smoothly. And hey, I'm not just a coding whiz – I can rock Microsoft Word and Excel, creating docs and playing with data like a pro. Plus, I know my way around databases, helping organize and find info super efficiently. With these skills, I'm all set to dive into different projects and tackle the exciting world of tech!</p>
+
+      </div>
+
+      <div class="education">
+          <P>Education and work </P>
+          <P>experience</P>
+          <p>I hold a National Senior Certificate, meeting the prerequisites for bachelor's degree, diploma, or higher certificate study as outlined in the Government Gazette. Additionally, I pursued software development studies at CTU Training Solutions, gaining a solid foundation in software development principles and practices.</p>
+          <p>Alongside my academic pursuits, I gained diverse real-world experience. I presented engaging wine tastings at a wine farm, coached hurdle athletes, and managed a packaging store on a grape farm, honing my communication skills and fostering a strong work ethic. These experiences complemented my formal education, providing a well-rounded skill set.</p>
+      </div>
+
+    </section>
+
+    <div id="Projects" class="projects">
+      <p>What projects have I done?</p>
+      <a href="Projects.html" target="_self"><button>FIND OUT</button></a>
+    </div>
+
+    <section id="ContactMe" class="contact-me">
+      <div class="contact-me-container">
+
+        <p>Contact Me</p>
+        <p>Feel free to reach out—I'm always open to new opportunities and collaborations. Whether you have a project idea, want to discuss potential collaborations, or simply want to connect, I'd love to hear from you.</p>
+        <p>You can find me through the following links or just by filling in the below form if you have any questions.</p>
+
+        <div class="sociale-media">
+          <a href="https://www.instagram.com/jacobus_spreeth/" target="_blank">
+            <img class="instagram_logo"  src="../Images/instagran_logo.jpg" alt="Link to my Instagram account">
+          </a>
+
+          <a href="https://twitter.com/JacobusSpreeth" target="_blank">
+            <img class="x_logo"  src="../Images/X_logo.png" alt="Link to my X account">
+          </a>
+        </div>
+
+        <div class="form">
+          <form onsubmit="sendEmail(); reset(); return false;">
+
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Your Name..">
+            
+            
+            <label for="email">Email:</label>
+            <input id="email" type="text" name="email" placeholder="Your Email..">
+            
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <input id="submit-button" type="submit" value="submit">
+            
+          </form>
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer>
+      <nav>
+
+        <a href="#" class="logo">JS Design</a>
+        <p>&copy; 2023 JS Design. All rights reserved.</p>
+
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Me</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+      </nav>
+
+    </footer>
+
+    </div>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    
+    <script src="../JavaScript/script.js"></script>
+
+  </body>
+</html>
